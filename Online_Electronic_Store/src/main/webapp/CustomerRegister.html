@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Register Form</title>
+    <link rel="stylesheet" type="text" href="bg.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            round-image: url('https://i.pinimg.com/236x/61/f5/a4/61f5a4afa923860f49fb29c50ab8ae25.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+        .container {
+            width: 400px;
+            margin: 80px auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="password"]
+        {
+			width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+		}
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Register</h1>
+    <form action="cps" method="post">
+        <label for="uname">User Name</label>
+        <input type="text" id="uname" name="uname">
+
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd" name="pwd">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname">
+
+        <label for="addr">Address</label>
+        <input type="text" id="addr" name="addr">
+
+        <label for="mail">Mail ID</label>
+        <input type="text" id="mail" name="mail">
+
+        <label for="mobile">Mobile</label>
+        <input type="text" id="mobile" name="mobile">
+
+        <input type="submit" value="Register">
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Customer Login</title>
+<link rel="stylesheet" type="text" href="bg.css">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('https://t4.ftcdn.net/jpg/05/45/42/81/360_F_545428173_uyYWJoR9n5uJFYIWfDa2C49AzIECcU20.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .login-box {
+        background-color: #ffffff;
+        padding: 40px 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .login-box h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+        transition: border-color 0.3s;
+    }
+
+    .login-box input[type="text"]:focus,
+    .login-box input[type="password"]:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+    .login-box input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .login-box input[type="submit"]:hover {
+        background-color: #0056b3;
+        transform: scale(1.03);
+    }
+
+    .login-box a {
+        display: inline-block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    .login-box a:hover {
+        text-decoration: underline;
+    }
+
+    .marquee {
+        font-size: 22px;
+        color: #444;
+        margin-bottom: 20px;
+        animation: slide 10s linear infinite;
+    }
+
+    @keyframes slide {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+</style>
+</head>
+<body>
+
+<div class="login-box">
+    <div class="marquee">Welcome to Customer Login</div>
+    <form action="clog" method="post">
+        <input type="text" name="a_uname" placeholder="Username" required>
+        <input type="password" name="a_pwd" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </form>
+    <a href="CustomerRegister.html">New Customer? Register Here</a>
+</div>
+
+</body>
+</html>
